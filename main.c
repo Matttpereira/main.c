@@ -27,7 +27,7 @@ void executarFibonacci() {
         }
         printf("%d ", proximo);
     }
-    printf("\n");
+    printf("\n");
 }
 void executarFatoriais() {
     int N;
