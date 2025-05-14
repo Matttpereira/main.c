@@ -86,3 +86,54 @@ void verificarPalindromo() {
         printf("A palavra NAO e um palindromo.\n");
     }
 }
+void verificarSubstring() {
+    char texto[101], sub[101];
+
+    printf("Digite a primeira string: ");
+    scanf(" %[^\n]", texto);
+
+    printf("Digite a segunda string: ");
+    scanf(" %[^\n]", sub);
+
+    if (strstr(texto, sub) != NULL) {
+        printf("A segunda string esta contida na primeira.\n");
+    } else {
+        printf("A segunda string NAO esta contida na primeira.\n");
+    }
+}
+
+int main() {
+    int opcao;
+
+    do {
+        printf("\n===== MENU DE EXERCICIOS =====\n");
+        printf("1 - Sequencia de Fibonacci\n");
+        printf("2 - Fatoriais\n");
+        printf("3 - Verificar Palindromo\n");
+        printf("4 - Verificar Substring\n");
+        printf("5 - Sair\n");
+        printf("Escolha uma opcao: ");
+        scanf("%d", &opcao);
+
+        switch (opcao) {
+            case 1:
+                executarFibonacci();
+                break;
+            case 2:
+                executarFatoriais();
+                break;
+            case 3:
+                verificarPalindromo();
+                break;
+            case 4:
+                verificarSubstring();
+                break;
+            case 5:
+                printf("Saindo...\n");
+                break;
+        }
+
+    } while (opcao != 5);
+
+    return 0;
+}
