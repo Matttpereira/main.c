@@ -1,3 +1,4 @@
+// Mateus Patricio Pereira RM564695, Gabriel Nacarelli Pinheiro RM565298, Leonardo Luster Gomes RM564448
 #include <stdio.h>
 #include <string.h>
 
@@ -26,5 +27,5 @@ void executarFibonacci() {
         }
         printf("%d ", proximo);
     }
-    printf("\n");
+   Â printf("\n");
 }
